@@ -90,6 +90,19 @@ h6,
 
 
 /*** Navbar ***/
+
+.navbar {
+    transition: top 0.3s;
+}
+
+.navbar-scroll-down {
+    top: -100px; /* Cache la navbar lorsqu'on défile vers le bas */
+}
+
+.navbar-scroll-up {
+    top: 0; /* Affiche la navbar lorsqu'on défile vers le haut */
+}
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
@@ -101,7 +114,7 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-    position: relative;
+    position: sticky;
     margin-right: 50px;
     padding: 35px 0;
     font-family: 'Jost', sans-serif;
@@ -141,7 +154,7 @@ h6,
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-        position: relative;
+        position: sticky;
         background: #FFFFFF;
     }
 
@@ -178,7 +191,7 @@ h6,
     }
     
     .sticky-top.navbar-light {
-        position: fixed;
+        position: sticky;
         background: #FFFFFF;
     }
 
@@ -358,6 +371,10 @@ h6,
 .progress .progress-bar {
     width: 0px;
     transition: 3s;
+}
+
+.container-xxl2 {
+    margin: 3rem 0;
 }
 
 
